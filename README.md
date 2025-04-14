@@ -2,7 +2,7 @@
 
 - **Für Entwickler**: Codeverlauf verstehen, Refactorings nachvollziehen, eigene Beiträge analysieren.
     
-- **Für Teams**: Projektentwicklung visualisieren, Contributions bewerten.
+- **Für Teams**: Projektentwicklung visualisieren, Contributions bewerten..
     
 - **Für Bewerbungen**: Visualisierte Projekte als Portfolio-Highlight.
     
