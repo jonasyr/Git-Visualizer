@@ -1,0 +1,39 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [dev, main]
+  pull_request:
+    branches: [dev, main]
+
+jobs:
+  build-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install Frontend Dependencies
+        working-directory: apps/frontend
+        run: pnpm install
+      - name: Build Frontend
+        working-directory: apps/frontend
+        run: pnpm run build
+
+  build-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install Backend Dependencies
+        working-directory: apps/backend
+        run: pnpm install
+      - name: TypeScript Check (Backend)
+        working-directory: apps/backend
+        run: pnpm exec tsc --noEmit
+
