@@ -7,6 +7,17 @@ import jsxA11y from "eslint-plugin-jsx-a11y";
 import prettier from "eslint-config-prettier";
 
 export default [
+
+  {
+    // Dateien, die von ESLint ignoriert werden sollen:
+    ignores: [
+      "apps/frontend/postcss.config.cjs",
+      "apps/frontend/tailwind.config.cjs",
+      "prettier.config.js"
+    ]
+  },
+
+
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
