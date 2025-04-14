@@ -6,7 +6,7 @@
     
 - **Für Bewerbungen**: Visualisierte Projekte als Portfolio-Highlight.
     
-- **Für Forschung/Lehre**: Git-Prozesse oder Open Source-Projektverläufe analysieren.
+- **Für Forschung/Lehre**: Git-Prozesse oder Open Source-Projektverläufe analysieren..
     
 ---
 
