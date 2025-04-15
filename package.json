@@ -30,5 +30,8 @@
     "lint-staged": "^15.5.1",
     "prettier": "^3.5.3",
     "typescript-eslint": "^8.24.1"
+  },
+  "dependencies": {
+    "shared-types": "^1.0.0"
   }
 }
