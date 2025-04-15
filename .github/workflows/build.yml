@@ -7,27 +7,26 @@ on:
     branches: [dev, main]
 
 jobs:
+  # --- Consider updating build-frontend as well ---
   build-frontend:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: latest
-
-      - name: Install Frontend Dependencies
-        working-directory: apps/frontend
-        run: pnpm install
-
+          version: latest # Use latest or match your local pnpm version (e.g., '10')
+          run_install: false # We'll run install manually from the root
+      - name: Install Dependencies (Root) # Install from root
+        run: pnpm install --frozen-lockfile # Recommended for CI
+      - name: Build shared-types # Build shared types if frontend depends on it
+        run: pnpm --filter shared-types build # Add if needed
       - name: Build Frontend
-        working-directory: apps/frontend
+        working-directory: apps/frontend # Keep WD for build command
         run: pnpm run build
 
   build-backend:
@@ -38,18 +37,24 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18' # Ensure this matches your local environment if possible
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8
+          # Use latest or match your local pnpm version (e.g., '10')
+          version: latest # Changed from 8 to latest - align with local if possible
+          run_install: false # Prevent the action from running install automatically
 
-      - name: Install Backend Dependencies
-        working-directory: apps/backend
-        run: pnpm install
+      # --- Corrected Dependency Installation ---
+      - name: Install Dependencies (Root) # <-- Changed name and removed working-directory
+        run: pnpm install --frozen-lockfile # Install from the root, use frozen lockfile for CI
 
+      # --- Added Build Step for Dependency ---
+      - name: Build shared-types # <-- Added step
+        run: pnpm --filter shared-types build # Build the shared package first
+
+      # --- Type Check in Correct Directory ---
       - name: TypeScript Check
-        working-directory: apps/backend
+        working-directory: apps/backend # <-- Keep working-directory here
         run: pnpm exec tsc --noEmit
-
