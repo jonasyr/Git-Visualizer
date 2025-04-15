@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      shared-types:
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       '@eslint/js':
         specifier: ^9.21.0
@@ -50,6 +54,9 @@ importers:
       express:
         specifier: ^5.1.0
         version: 5.1.0
+      shared-types:
+        specifier: ^1.0.0
+        version: 1.0.0
       simple-git:
         specifier: ^3.27.0
         version: 3.27.0
@@ -81,6 +88,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
+      shared-types:
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       '@eslint/js':
         specifier: ^9.21.0
@@ -2140,6 +2150,9 @@ packages:
 
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
+
+  shared-types@1.0.0:
+    resolution: {integrity: sha512-07KWxU/WXpbJkff03Wp2CpnoU+7Qs9Rmu+y9ooieVCX4nVa/nOfnbrhyefwvuxdlTfftWI0Vrs9Qm/4Xna+tQg==}
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -4580,6 +4593,8 @@ snapshots:
       es-object-atoms: 1.1.1
 
   setprototypeof@1.2.0: {}
+
+  shared-types@1.0.0: {}
 
   shebang-command@2.0.0:
     dependencies:
