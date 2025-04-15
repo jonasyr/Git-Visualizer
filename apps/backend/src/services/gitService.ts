@@ -24,7 +24,6 @@ interface GitLogEntry extends DefaultLogFields {
 }
 
 class GitService {
-  // No changes needed for the constructor or the existing cloneRepository/cleanupRepository methods
 
   private git: SimpleGit;
 
