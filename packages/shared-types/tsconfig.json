@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "composite": true, // Very important for project references
+    "declaration": true, // Generate .d.ts files
+    "declarationMap": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2016",
+    "lib": ["es2017", "esnext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist" // Output directory for declarations
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

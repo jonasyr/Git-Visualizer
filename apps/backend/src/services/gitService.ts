@@ -1,4 +1,4 @@
-import simpleGit, { SimpleGit, SimpleGitOptions, DefaultLogFields, ListLogLine } from 'simple-git'; // Import necessary types
+import simpleGit, { SimpleGit, SimpleGitOptions, DefaultLogFields } from 'simple-git'; // Import necessary types
 import { mkdtemp, rm } from 'fs/promises';
 import path from 'path';
 import os from 'os';
