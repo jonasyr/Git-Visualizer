@@ -1,0 +1,11 @@
+{
+  "name": "shared-types",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm exec tsc"
+  },
+  "main": "./dist/index.js",
+  "devDependencies": {
+    "typescript": "~5.7.2"
+  }
+}
