@@ -1,3 +1,5 @@
+# Strategy.md
+
 ## 🔁 **Branching-Strategie**
 
 Vermeidet Chaos mit einer klaren Strategie:
@@ -22,7 +24,7 @@ Vermeidet Chaos mit einer klaren Strategie:
 
 Zweckmäßig, klar getrennt – hier ein Vorschlag:
 
-```
+```text
 .github/              # GitHub Actions, Issue Templates
 public/               # Statische Assets für das Frontend (Favicon, etc.)
 src/

@@ -1,28 +1,38 @@
+<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD041 -->
+<!-- markdownlint-disable MD003 -->
 ---
+
 name: Standard Issue
-about: Verwende dieses Template für alle typischen Aufgaben wie Features, Bugs, Refactoring
-  etc.
+about: |
+  Verwende dieses Template für alle typischen Aufgaben wie
+  Features, Bugs, Refactoring etc.
 title: 'type (scope): <Kurzbeschreibung>'
 labels: ''
 assignees: ''
-
 ---
 
-## 🧾 Beschreibung
+# 🧾 Beschreibung
 
-<!-- Beschreibe klar und präzise, was gemacht werden soll und warum. Was ist das Ziel? Welche Funktionalität oder Korrektur wird erwartet? -->
+<!--
+Beschreibe klar und präzise, was gemacht werden soll und warum.
+Was ist das Ziel? Welche Funktionalität oder Korrektur wird
+erwartet?
+-->
 
 ## 🛠 Umsetzungsschritte
 
-<!-- Detaillierte ToDos oder ein Plan, wie die Umsetzung erfolgen soll -->
+<!--
+Detaillierte ToDos oder ein Plan, wie die Umsetzung erfolgen soll
+-->
 
-- [ ] Schritt 1
-- [ ] Schritt 2
-- [ ] Schritt 3
+- [ ] Schritt 1  
+- [ ] Schritt 2  
+- [ ] Schritt 3  
 
 ## 🗂 Labels
 
-Bitte wähle passende Labels aus den folgenden Kategorien aus:
+Bitte wähle passende Labels aus den folgenden Kategorien:
 
 ### Scope
 
@@ -43,9 +53,9 @@ Bitte wähle passende Labels aus den folgenden Kategorien aus:
 - `prio:medium`
 - `prio:low`
 
-## 🧑‍💻 Assignee (noch optional)
+## 🧑‍💻 Assignee (optional)
 
-> @<Name des Entwicklers> – Bitte selbst zuweisen oder durch Reviewer zuweisen lassen.
+> @<Name> – Bitte selbst zuweisen oder durch Reviewer zuweisen lassen.
 
 ## 🌱 Branch
 
@@ -53,8 +63,8 @@ Bitte wähle passende Labels aus den folgenden Kategorien aus:
 
 ## 📁 Code Ort(e)
 
-> Gib an, wo der relevante Code zu finden sein wird:
-z. B. `apps/backend/src/services/gitService.ts`
+> Gib an, wo der relevante Code zu finden sein wird:  
+> z. B. `apps/backend/src/services/gitService.ts`
 
 ## 📆 Milestone
 
@@ -62,8 +72,10 @@ z. B. `apps/backend/src/services/gitService.ts`
 
 ## 🧪 Akzeptanzkriterien
 
-<!-- Optional: Was muss erfüllt sein, damit dieses Issue als erledigt gilt? -->
+<!--
+Optional: Was muss erfüllt sein, damit dieses Issue als erledigt gilt?
+-->
 
-- [ ] Funktioniert laut Beschreibung
-- [ ] Wurde manuell getestet
-- [ ] Wurde in den dev-Branch gemerged
+- [ ] Funktioniert laut Beschreibung  
+- [ ] Manuell getestet  
+- [ ] In den dev-Branch gemerged  
