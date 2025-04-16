@@ -1,6 +1,7 @@
 # Backend Middlewares
 
 ## `src/middlewares/errorHandler.ts`
+
 ```ts
 export default function errorHandler(
   err: Error, req: Request, res: Response, next: NextFunction

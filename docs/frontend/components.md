@@ -1,6 +1,7 @@
 # Frontend Components
 
 ## `src/App.tsx`
+
 - **Zustand**: `const [count, setCount]` (Klick‑Zähler)  
 - **Return**  
   - Zwei Logos (`vite.svg`, `react.svg`) mit Hover‑Effekten  
@@ -9,7 +10,9 @@
   - Hinweis‑Text
 
 ## `src/main.tsx`
+
 - Bootstrapping mit `createRoot`:  
+
 ```ts
 createRoot(document.getElementById('root')!)
   .render(<StrictMode><App /></StrictMode>);

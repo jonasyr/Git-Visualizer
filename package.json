@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "lint:md": "markdownlint-cli2",
     "lint:fix": "eslint . --ext .js,.ts,.jsx,.tsx --fix",
     "format": "prettier --write ."
   },
@@ -13,6 +14,10 @@
     "**/*.{ts,tsx,js,jsx}": [
       "eslint --fix",
       "prettier --write"
+    ],
+    "**/*.{md,markdown}": [
+      "markdownlint-cli2 --fix",
+      "git add"
     ]
   },
   "keywords": [],
@@ -28,6 +33,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
+    "markdownlint-cli2": "^0.17.2",
     "prettier": "^3.5.3",
     "typescript-eslint": "^8.24.1"
   },

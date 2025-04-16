@@ -24,18 +24,21 @@ assignees: ''
 
 Bitte wähle passende Labels aus den folgenden Kategorien aus:
 
-### Scope:
+### Scope
+
 - `scope:backend`
 - `scope:frontend`
 - `scope:shared`
 
-### Type:
+### Type
+
 - `type:feature`
 - `type:bug`
 - `type:chore`
 - `type:refactor`
 
-### Priority:
+### Priority
+
 - `prio:high`
 - `prio:medium`
 - `prio:low`

@@ -14,6 +14,7 @@ docs/
 └── middlewares.md # Middleware: Error Handling, CORS
 
 Jede Datei behandelt:
+
 - **Zweck** des Ordners / der Datei  
 - **Inhalt & Verantwortlichkeiten**  
 - **Wichtige Funktionen & Variablen**  

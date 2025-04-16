@@ -28,3 +28,8 @@ jobs:
       - name: Run ESLint
         run: pnpm run lint
 
+      - name: GitHub‑Markdown‑Lint
+        uses: actions/markdownlint@v1
+        with:
+          config_file: .markdownlint-cli2.yaml
+
