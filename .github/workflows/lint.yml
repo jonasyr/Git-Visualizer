@@ -28,3 +28,5 @@ jobs:
       - name: Run ESLint
         run: pnpm run lint
 
+      - name: Run MarkdownLint
+        run: pnpm run lint:md
