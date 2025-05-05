@@ -1,5 +1,25 @@
 # README.md
 
+## Build & Run
+
+Build Shared Types
+```bash
+cd packages/shared-types
+pnpm run build
+```
+
+Run Frontend
+```bash
+cd apps/frontend
+pnpm run dev
+```
+
+Run Backend
+```bash
+cd apps/backend
+pnpm run dev
+```
+
 ## **1. Zielsetzung und Use Cases**
 
 - **Für Entwickler**:  
