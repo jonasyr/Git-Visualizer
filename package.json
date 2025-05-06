@@ -38,6 +38,9 @@
     "typescript-eslint": "^8.24.1"
   },
   "dependencies": {
-    "shared-types": "^1.0.0"
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "shared-types": "^1.0.0",
+    "ts-jest": "^29.3.2"
   }
 }
