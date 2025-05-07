@@ -6,7 +6,15 @@ import simpleGit, {
 import { mkdtemp, rm } from 'fs/promises';
 import path from 'path';
 import os from 'os';
-import { Commit } from 'shared-types'; // Import the Commit interface
+
+// Define the Commit interface directly since we're having issues with shared-types
+interface Commit {
+  sha: string;
+  message: string;
+  date: string;
+  authorName: string;
+  authorEmail: string;
+}
 
 // Optional: Define more specific options if needed
 const gitOptions: Partial<SimpleGitOptions> = {

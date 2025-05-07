@@ -8,7 +8,7 @@
     "dev": "pnpm -r run dev",
     "dev:frontend": "pnpm --filter frontend run dev",
     "dev:backend": "pnpm --filter backend run dev",
-    "build": "pnpm -r run build",
+    "build": "pnpm --filter shared-types build && pnpm --filter backend build && pnpm --filter frontend build",
     "test": "jest --config=jest.config.cjs",
     "test:frontend": "jest --config=jest.config.cjs --selectProjects=frontend",
     "test:backend": "jest --config=jest.config.cjs --selectProjects=backend",
@@ -48,6 +48,7 @@
     "lint-staged": "^15.5.1",
     "markdownlint-cli2": "^0.17.2",
     "prettier": "^3.5.3",
+    "rimraf": "^5.0.1",
     "ts-jest": "^29.3.2",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1"
