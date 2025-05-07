@@ -3,18 +3,21 @@
 ## Build & Run
 
 Build Shared Types
+
 ```bash
 cd packages/shared-types
 pnpm run build
 ```
 
 Run Frontend
+
 ```bash
 cd apps/frontend
 pnpm run dev
 ```
 
 Run Backend
+
 ```bash
 cd apps/backend
 pnpm run dev
@@ -87,7 +90,7 @@ pnpm run dev
 
 - **Optional**:
 
-  - Branch auswählen  
+  - Branch auswählen
   - Zeitraum festlegen
 
 - **Backend‑Funktionalitäten**:

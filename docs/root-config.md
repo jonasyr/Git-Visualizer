@@ -2,18 +2,18 @@
 
 ## `package.json`
 
-- **Scripts**  
-  - `lint`, `lint:fix`: ESLint über alle `.js/.ts/.jsx/.tsx`  
-  - `format`: Prettier-Formatierung  
-- **Dependencies**  
-  - `shared-types`: Gemeinsame TypeScript-Interfaces  
-- **DevDependencies**  
+- **Scripts**
+  - `lint`, `lint:fix`: ESLint über alle `.js/.ts/.jsx/.tsx`
+  - `format`: Prettier-Formatierung
+- **Dependencies**
+  - `shared-types`: Gemeinsame TypeScript-Interfaces
+- **DevDependencies**
   - ESLint, Prettier, Husky, lint-staged, typescript-eslint
 
 ## `eslint.config.mjs`
 
-- Globale ESLint-Regeln für JS/TS, React, Hooks, Accessibility  
-- Ignoriert Konfig‑Dateien im Frontend  
+- Globale ESLint-Regeln für JS/TS, React, Hooks, Accessibility
+- Ignoriert Konfig‑Dateien im Frontend
 - Integriert Prettier am Ende der Pipeline
 
 ## `prettier.config.js`
@@ -22,5 +22,5 @@
 
 ## `pnpm-workspace.yaml` & `pnpm-lock.yaml`
 
-- Definiert Monorepo-Pakete (`apps/*`, `packages/*`)  
+- Definiert Monorepo-Pakete (`apps/*`, `packages/*`)
 - Lockfile für reproduzierbare Builds

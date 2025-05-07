@@ -14,3 +14,4 @@ export default function errorHandler(
 - Loggt Stacktrace
 - Sendet 500 + Fehlermeldung JSON
 
+```
