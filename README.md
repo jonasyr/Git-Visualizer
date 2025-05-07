@@ -2,6 +2,11 @@
 
 ## Build & Run
 
+Install packages (root)
+```bash
+pnpm install
+```
+
 Build Shared Types
 ```bash
 cd packages/shared-types
