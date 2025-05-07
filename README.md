@@ -13,6 +13,12 @@ cd packages/shared-types
 pnpm run build
 ```
 
+Build Frontend
+```bash
+cd apps/frontend
+pnpm run build
+```
+
 Run Frontend
 ```bash
 cd apps/frontend
