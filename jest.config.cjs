@@ -33,16 +33,16 @@ module.exports = {
       },
       // node_modules ignorieren – außer unseren ESM-Modulen
       transformIgnorePatterns: [
-        '/node_modules/(?!(ansi-styles|ansi-regex|kleur|chalk)/)',
+        'node_modules/(?!(ansi-styles|ansi-regex|kleur|chalk)/)',
       ],
-      
+
       moduleNameMapper: {
         '\\.css$': 'identity-obj-proxy',
         '\\.(svg|jpg|jpeg|png|gif|webp)$': '<rootDir>/apps/frontend/__mocks__/fileMock.cjs',
         '^/vite\\.svg$': '<rootDir>/apps/frontend/__mocks__/fileMock.cjs',
       },
       setupFilesAfterEnv: ['<rootDir>/apps/frontend/jest.setup.ts'],
-      moduleDirectories: ['node_modules', '<rootDir>/node_modules', '../../node_modules'],
+      moduleDirectories: ['node_modules', '<rootDir>/apps/frontend/node_modules', '<rootDir>/node_modules', '../../node_modules'],
       testPathIgnorePatterns: ['/node_modules/'],
       extensionsToTreatAsEsm: ['.ts', '.tsx'],
     },
