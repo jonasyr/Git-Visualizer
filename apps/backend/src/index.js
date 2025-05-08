@@ -7,6 +7,7 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const routes_1 = __importDefault(require("./routes"));
+const repositoryRoutes_1 = __importDefault(require("./routes/repositoryRoutes")); // Import the new repository routes
 const errorHandler_1 = __importDefault(require("./middlewares/errorHandler"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
@@ -15,6 +16,7 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 // API-Routen
 app.use('/api', routes_1.default);
+app.use('/api/repositories', repositoryRoutes_1.default); // Mount the repository routes
 // Fehlerhandling-Middleware
 app.use(errorHandler_1.default);
 app.listen(PORT, () => {

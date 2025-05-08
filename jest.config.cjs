@@ -1,5 +1,6 @@
 /** @type {import('jest').Config} */
 module.exports = {
+  
   projects: [
     {
       displayName: 'backend',
@@ -22,24 +23,21 @@ module.exports = {
       rootDir: './',
       testMatch: ['<rootDir>/apps/frontend/**/__tests__/**/*.test.tsx'],
       transform: {
-        // ➞ Alle TS/TSX und JS/JSX mit ts-jest (ESM-Modus) bearbeiten
-        '^.+\\.(t|j)sx?$': [
+        // ➞ TypeScript Dateien mit ts-jest bearbeiten
+        '^.+\\.tsx?$': [
           'ts-jest',
-          { tsconfig: 'apps/frontend/tsconfig.jest.json', useESM: true },
+          { tsconfig: 'apps/frontend/tsconfig.jest.json' },
         ],
         // ➞ Assets stubben
         '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
           'jest-transform-stub',
       },
-      // node_modules ignorieren – außer unseren ESM-Modulen
-      transformIgnorePatterns: [
-        'node_modules/(?!(ansi-styles|ansi-regex|kleur|chalk)/)',
-      ],
 
       moduleNameMapper: {
         '\\.css$': 'identity-obj-proxy',
         '\\.(svg|jpg|jpeg|png|gif|webp)$': '<rootDir>/apps/frontend/__mocks__/fileMock.cjs',
         '^/vite\\.svg$': '<rootDir>/apps/frontend/__mocks__/fileMock.cjs',
+        '^ansi-styles$': '<rootDir>/apps/frontend/__mocks__/ansi-styles.cjs',
       },
       setupFilesAfterEnv: ['<rootDir>/apps/frontend/jest.setup.ts'],
       moduleDirectories: ['node_modules', '<rootDir>/apps/frontend/node_modules', '<rootDir>/node_modules', '../../node_modules'],
