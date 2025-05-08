@@ -1,2 +1,2 @@
-// jest-transforms/fileMock.cjs
+// __mocks__/fileMock.cjs
 module.exports = 'test-file-stub';

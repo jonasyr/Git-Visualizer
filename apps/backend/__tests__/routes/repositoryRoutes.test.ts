@@ -1,4 +1,3 @@
-/*
 import request from 'supertest';
 import express, { Application } from 'express';
 import { gitService } from '../../src/services/gitService';
@@ -96,4 +95,3 @@ describe('Repository API', () => {
     expect(response.body.error).toBe(mockError.message);
   });
 });
-*/

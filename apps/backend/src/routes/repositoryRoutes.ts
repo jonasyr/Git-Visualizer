@@ -52,6 +52,7 @@ router.post('/', (req, res, next) => {
           console.error('Error during repository cleanup:', cleanupError);
         });
       }
+      res.status(500).json({ error: (error as Error).message });
     });
 });
 
