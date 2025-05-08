@@ -2,16 +2,16 @@
 
 ## `src/App.tsx`
 
-- **Zustand**: `const [count, setCount]` (Klick‑Zähler)  
-- **Return**  
-  - Zwei Logos (`vite.svg`, `react.svg`) mit Hover‑Effekten  
-  - Überschrift `<h1>`  
-  - Button: erhöht `count`  
+- **Zustand**: `const [count, setCount]` (Klick‑Zähler)
+- **Return**
+  - Zwei Logos (`vite.svg`, `react.svg`) mit Hover‑Effekten
+  - Überschrift `<h1>`
+  - Button: erhöht `count`
   - Hinweis‑Text
 
 ## `src/main.tsx`
 
-- Bootstrapping mit `createRoot`:  
+- Bootstrapping mit `createRoot`:
 
 ```ts
 createRoot(document.getElementById('root')!)
@@ -24,3 +24,4 @@ createRoot(document.getElementById('root')!)
 ## Sonstiges
 - **assets/**: Logos
 - **vite-env.d.ts**: Vite-Client Types
+```

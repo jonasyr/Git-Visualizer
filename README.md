@@ -2,34 +2,39 @@
 
 ## Build & Run
 
-Install packages (root)
+Install Dependencies
+
 ```bash
 pnpm install
 ```
 
-Build Shared Types
+Build the Project
+
 ```bash
-cd packages/shared-types
 pnpm run build
 ```
 
-Build Frontend
-```bash
-cd apps/frontend
-pnpm run build
-```
+Run the Application
 
-Run Frontend
 ```bash
-cd apps/frontend
 pnpm run dev
 ```
 
-Run Backend
-```bash
-cd apps/backend
-pnpm run dev
-```
+## Scripts Overview
+
+- **`pnpm run dev`**: Runs the frontend and backend in development mode.
+- **`pnpm run dev:frontend`**: Runs only the frontend in development mode.
+- **`pnpm run dev:backend`**: Runs only the backend in development mode.
+- **`pnpm run build`**: Builds the shared types, backend, and frontend.
+- **`pnpm run test`**: Runs all tests.
+- **`pnpm run test:frontend`**: Runs tests for the frontend only.
+- **`pnpm run test:backend`**: Runs tests for the backend only.
+- **`pnpm run test:watch`**: Runs tests in watch mode.
+- **`pnpm run test:coverage`**: Runs tests and generates a coverage report.
+- **`pnpm run lint`**: Lints all JavaScript/TypeScript files.
+- **`pnpm run lint:md`**: Lints all Markdown files.
+- **`pnpm run lint:fix`**: Fixes linting issues in JavaScript/TypeScript files.
+- **`pnpm run format`**: Formats all files using Prettier.
 
 ## **1. Zielsetzung und Use Cases**
 
@@ -98,7 +103,7 @@ pnpm run dev
 
 - **Optional**:
 
-  - Branch auswählen  
+  - Branch auswählen
   - Zeitraum festlegen
 
 - **Backend‑Funktionalitäten**:

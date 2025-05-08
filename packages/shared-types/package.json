@@ -2,10 +2,12 @@
   "name": "shared-types",
   "version": "1.0.0",
   "scripts": {
-    "build": "pnpm exec tsc"
+    "build": "rimraf dist && ../../node_modules/.bin/tsc"
   },
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "devDependencies": {
-    "typescript": "~5.7.2"
+    "rimraf": "^5.0.1",
+    "typescript": "~5.7.3"
   }
 }

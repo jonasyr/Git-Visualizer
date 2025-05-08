@@ -15,8 +15,8 @@ docs/
 
 Jede Datei behandelt:
 
-- **Zweck** des Ordners / der Datei  
-- **Inhalt & Verantwortlichkeiten**  
-- **Wichtige Funktionen & Variablen**  
-- **Abhängigkeiten**  
+- **Zweck** des Ordners / der Datei
+- **Inhalt & Verantwortlichkeiten**
+- **Wichtige Funktionen & Variablen**
+- **Abhängigkeiten**
 - (Optional) Diagramme / Flowcharts für komplexe Abläufe

@@ -1,15 +1,16 @@
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD041 -->
-<!-- markdownlint-disable MD003 -->
----
+
+## <!-- markdownlint-disable MD003 -->
 
 name: Standard Issue
 about: |
-  Verwende dieses Template für alle typischen Aufgaben wie
-  Features, Bugs, Refactoring etc.
+Verwende dieses Template für alle typischen Aufgaben wie
+Features, Bugs, Refactoring etc.
 title: 'type (scope): <Kurzbeschreibung>'
 labels: ''
 assignees: ''
+
 ---
 
 # 🧾 Beschreibung
@@ -26,9 +27,9 @@ erwartet?
 Detaillierte ToDos oder ein Plan, wie die Umsetzung erfolgen soll
 -->
 
-- [ ] Schritt 1  
-- [ ] Schritt 2  
-- [ ] Schritt 3  
+- [ ] Schritt 1
+- [ ] Schritt 2
+- [ ] Schritt 3
 
 ## 🗂 Labels
 
@@ -76,6 +77,6 @@ Bitte wähle passende Labels aus den folgenden Kategorien:
 Optional: Was muss erfüllt sein, damit dieses Issue als erledigt gilt?
 -->
 
-- [ ] Funktioniert laut Beschreibung  
-- [ ] Manuell getestet  
-- [ ] In den dev-Branch gemerged  
+- [ ] Funktioniert laut Beschreibung
+- [ ] Manuell getestet
+- [ ] In den dev-Branch gemerged

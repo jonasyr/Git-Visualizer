@@ -6,14 +6,14 @@ Zentrale Definition von Interfaces, die in Front- und Backend gleichermaßen gen
 
 ## Dateien
 
-- **src/index.ts**  
-  - `interface Commit { sha, message, date, authorName, authorEmail }`  
+- **src/index.ts**
+  - `interface Commit { sha, message, date, authorName, authorEmail }`
   - `interface Author { name, email }`
 - **package.json**  
   Build‑Script: `pnpm exec tsc`
-- **tsconfig.json**  
+- **tsconfig.json**
   - `composite: true`, `declaration: true`, `outDir: dist`
-- **dist/**  
+- **dist/**
   - Generierte `.js` & `.d.ts` Dateien
 
 ## Build
@@ -21,3 +21,4 @@ Zentrale Definition von Interfaces, die in Front- und Backend gleichermaßen gen
 ```bash
 pnpm –r run build
 
+```
