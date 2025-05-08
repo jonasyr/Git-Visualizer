@@ -51,7 +51,8 @@
     "rimraf": "^5.0.1",
     "ts-jest": "^29.3.2",
     "typescript": "~5.7.2",
-    "typescript-eslint": "^8.24.1"
+    "typescript-eslint": "^8.24.1",
+    "jest-transform-stub": "^2.0.0"
   },
   "dependencies": {
     "shared-types": "workspace:*"
