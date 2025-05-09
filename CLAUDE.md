@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-GitRay is a Git visualization tool designed to help developers, teams, and researchers understand repository history through interactive visualizations. The project is structured as a monorepo with a frontend React app and a backend Node.js/Express service.
+GitRay is a Git visualization tool designed to help developers, teams, and researchers understand
+repository history through interactive visualizations. The project is structured as a monorepo,
+with a frontend React app and a backend Node.js/Express service.
 
 ## Commands
 
@@ -85,6 +87,7 @@ pnpm run format
 
 - Uses pnpm workspaces for package management
 - Three main packages:
+
   - `apps/frontend`: React application with Vite and Tailwind CSS
   - `apps/backend`: Express.js server with Git service functionality
   - `packages/shared-types`: Shared TypeScript interfaces
@@ -98,6 +101,7 @@ pnpm run format
 #### Git Service Functionality
 
 The core backend functionality revolves around the `GitService` class, which:
+
 1. Clones repositories into temporary directories
 2. Retrieves commit history from cloned repositories
 3. Cleans up temporary directories when operations complete
@@ -122,14 +126,17 @@ The core backend functionality revolves around the `GitService` class, which:
 All tests should follow the AAA pattern:
 
 1. **Arrange**: Set up the test environment and preconditions
+
    - Mock dependencies
    - Define inputs and expected outputs
    - Set up any necessary state
 
 2. **Act**: Execute the code being tested
+
    - Call the function/method being tested
 
 3. **Assert**: Verify that the expected outcomes occurred
+
    - Check return values
    - Verify mock functions were called correctly
    - Validate any state changes
@@ -143,6 +150,7 @@ Tests should focus on the "Happy Path" - the primary successful execution flow:
 - Add edge cases and error scenarios only when critical to functionality
 
 Example test structure:
+
 ```typescript
 test('should perform expected operation', async () => {
   // Arrange
